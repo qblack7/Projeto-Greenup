@@ -35,7 +35,7 @@
      if(($_SERVER['REQUEST_METHOD'] == 'POST') && isset($_POST)){
 
        $admin = 'admin1234@gmail.com';
-       $senhaadm = '12345';
+       $senhaadm = '1234';
        $usuario = $_POST['loginusuario'];
        $senhauser = $_POST['senha'];
         if($usuario === $admin && $senhauser === $senhaadm){
