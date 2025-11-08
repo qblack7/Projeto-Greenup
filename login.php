@@ -4,12 +4,12 @@
     <link rel="stylesheet" href="estilo.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Greenup</title>
+    <title>Login GreenUp</title>
 </head>
 <body>
   <div class="login-box">
     <h2>Login</h2>
-      <form method="POST">
+      <form name=login method="POST">
         <div class="input-box">
           <input placeholder="Usuario" type="email" name="loginusuario">
         </div>
@@ -23,11 +23,11 @@
              </label>
         </div>
     
-      
-        <button class="botao" type="submit">Entrar</button> 
-       
+      <div class="botao">
+        <button class="botao" type="submit"><h4>Entrar</h4></button> 
+      </div>
            <div>
-            <p>Não possui conta? <a href="#">Cadastra-se</a></p>
+            <p>Não possui conta? <button class="botaoc" type='submit' name='cad'>Cadastra-se</button></p>
            </div>
         </form>
 
@@ -49,10 +49,15 @@
         } 
 
 
+        if(isset($_POST['cad'])) {
+          // Pega o valor do input
+          $cad = $_POST['loginusuario']; // aqui o que o usuário digitou vira $cad
+          $_SESSION['login_usuario'] = $cad; // já define como logado
+          header("Location: greenup.html");
+          exit;
+      }
+  }
 
-
-
-     }  
     ?>
   </div>
 </body>
