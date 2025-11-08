@@ -1,0 +1,53 @@
+/* Reset simples */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #0c9c18;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+}
+
+header .logo h1 {
+    font-size: 40px;
+}
+
+nav ul.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul.menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul.menu li a:hover {
+    color: #FFD700;
+}
+.servico1 {  
+text-align: center;
+border: 2px solid rgb(10, 201, 4);
+border-radius: 8px;
+width: 300px;
+padding: 50px 30px;
+margin: 60px auto;
+background-color: transparent;
+position: relative;
+top:-15px;
+left: 10px;
+}
