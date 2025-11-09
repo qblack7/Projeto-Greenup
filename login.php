@@ -40,7 +40,7 @@
        $senhauser = $_POST['senha'];
         if($usuario === $admin && $senhauser === $senhaadm){
 
-          header("Location: greenup.html");
+          header("Location: greenup.php");
           exit;
         }else{
   
@@ -53,7 +53,7 @@
           // Pega o valor do input
           $cad = $_POST['loginusuario']; // aqui o que o usuário digitou vira $cad
           $_SESSION['login_usuario'] = $cad; // já define como logado
-          header("Location: greenup.html");
+          header("Location: greenup.php");
           exit;
       }
   }
