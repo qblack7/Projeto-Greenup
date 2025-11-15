@@ -1,27 +1,31 @@
-/* Reset simples */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-   
+    background-color: #f5fff4;
+    color: #2f2f2f;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #0c9c18;
+    background: linear-gradient(90deg, #0c9c18, #14c42a);
     color: #fff;
+    padding: 20px 40px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
-.logo h3{
- width: 40px;
+.logo h3 {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 nav ul.menu {
@@ -31,42 +35,106 @@ nav ul.menu {
 }
 
 nav ul.menu li a {
-    text-decoration: none;
     color: #fff;
-    font-weight: bold;
-    transition: color 0.3s;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
 }
 
 nav ul.menu li a:hover {
-    color: #FFD700;
+    background-color: rgba(255,255,255,0.25);
 }
-.servico1 {  
-border-radius: 80px;
-text-align: center;
-width: 270px;
-padding: 40px 0px;
-margin: 70px auto;
-position: relative;
-right: 400px;
-box-shadow: 0 0 10px;
+
+/* Layout geral */
+.conteudo {
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: flex-start;
+    gap: 50px;
+    padding: 40px;
+    max-width: 1200px; /* limita a largura total para não esticar demais */
+    margin: 0 auto; /* centraliza na página */
 }
-.servico1 p{
-    color: rgb(1, 48, 7);
+
+
+/* Texto */
+.texto {
+    max-width: 600px;
+    line-height: 1.7;
 }
-.servico1 input{
-    border-radius: 5px;
-    font-family: arial;
-    border-color: rgb(1, 109, 1);
-    padding: 5px;
+
+.texto h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #0c9c18;
 }
-.botaoimc{
-    border-radius: 5px;
-    border: none;
-    width: 80%;
-    padding: 2px;
+
+.texto h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #0c9c18;
+}
+
+/* Box de cálculo */
+.servico1 {
+    width: 270px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 10px;
+    background: transparent;
+}
+
+.servico1 h3 {
+    color: #0c9c18;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 12px 0 5px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #0c9c18;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    border-color: #14c42a;
+}
+
+/* Botão */
+.botaoimc {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
     background-color: #0c9c18;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
-h3{
-color: white;
-font-family: arial;
+
+.botaoimc:hover {
+    background-color: #14c42a;
+}
+
+/* Resultado */
+.resultado {
+    margin-top: 15px;
+    background: #eaffea;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 5px solid #0c9c18;
 }
