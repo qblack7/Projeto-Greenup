@@ -15,7 +15,7 @@
     <nav>
         <ul class="menu">
             <li><a href="login.php">Login</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="principal.html">Sobre</a></li>
             <li><a href="contato.html">Contato</a></li>
         </ul>
     </nav>

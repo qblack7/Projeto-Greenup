@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(192, 252, 204);
+   
 }
 
 /* Cabeçalho */
@@ -17,11 +17,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    padding: 30px;
 }
 
 .logo h3{
- width: 30px;
+ width: 40px;
 }
 
 nav ul.menu {
@@ -41,22 +41,22 @@ nav ul.menu li a:hover {
     color: #FFD700;
 }
 .servico1 {  
-border-radius: 10px;
+border-radius: 80px;
 text-align: center;
 width: 270px;
-padding: 50px 10px;
-margin: 100px auto;
+padding: 40px 0px;
+margin: 70px auto;
 position: relative;
-right: 600px;
+right: 400px;
 box-shadow: 0 0 10px;
 }
 .servico1 p{
-    color: white;
+    color: rgb(1, 48, 7);
 }
 .servico1 input{
     border-radius: 5px;
     font-family: arial;
-    border: none;
+    border-color: rgb(1, 109, 1);
     padding: 5px;
 }
 .botaoimc{
@@ -64,6 +64,7 @@ box-shadow: 0 0 10px;
     border: none;
     width: 80%;
     padding: 2px;
+    background-color: #0c9c18;
 }
 h3{
 color: white;
