@@ -14,8 +14,7 @@
     </div>
     <nav>
         <ul class="menu">
-            <li><a href="login.php">Login</a></li>
-            <li><a href="principal.html">Sobre</a></li>
+            <li><a href="../primeira_tela/index.html">Inicio</a></li>
             <li><a href="contato.html">Contato</a></li>
         </ul>
     </nav>
@@ -94,7 +93,7 @@
         <br><br>
         <button type="submit" class="botaoimc" autocomplete="off">Calcular</button>
         <br><br>
-</div>
+
         <?php
         // serviço calcule imc //
         if(isset($_POST['peso']) && isset($_POST['altura'])){
@@ -124,6 +123,6 @@
         ?>
     </form>
 </div>
-
+</div>
 </body>
 </html>

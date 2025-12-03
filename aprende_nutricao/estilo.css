@@ -1,0 +1,89 @@
+/* Definições Gerais e Paleta de Cores */
+:root {
+    /* Tons de Verde */
+    --cor-primaria-verde: #4CAF50;    /* Verde Vibrante - Para títulos/destaques */
+    --cor-secundaria-verde: #8BC34A; /* Verde Claro - Para fundos secundários */
+    --cor-fundo-claro: #F1F8E9;      /* Verde Pastel/Quase Branco - Fundo da página */
+    
+    /* Cores de Apoio */
+    --cor-texto-escuro: #333;        /* Texto principal */
+    --cor-texto-claro: #fff;         /* Texto sobre o verde escuro */
+    --cor-rodape-fundo: #388E3C;     /* Verde Escuro para o rodapé */
+}
+
+/* Estilização do Corpo da Página */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo-claro); /* Fundo bem claro */
+    color: var(--cor-texto-escuro);
+}
+.inicio a{
+    text-decoration: none;
+    color:#fff;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-primaria-verde); /* Faixa verde no topo */
+    color: var(--cor-texto-claro);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px; /* Espaçamento para o nome do projeto */
+}
+
+header h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Conteúdo Principal */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Seções */
+section {
+    background-color: var(--cor-texto-claro); /* Fundo branco para o bloco de conteúdo */
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px; /* Cantos arredondados */
+    border-left: 5px solid var(--cor-primaria-verde); /* Destaque lateral verde */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+section h3 {
+    color: var(--cor-primaria-verde);
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+/* Listas */
+ul, ol {
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor-rodape-fundo); /* Verde escuro */
+    color: var(--cor-texto-claro);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
